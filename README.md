@@ -2,9 +2,9 @@
 
 # Hi 👋 I'm Shahab
 
-### 🚀 Senior Full Stack Developer | Laravel • Node.js • React • Vue.js
+### 🚀 Senior Full Stack Developer | Laravel • Node.js • Python/Django • React • Vue.js • Inertia.js
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=24&pause=1000&color=00C4FF&center=true&vCenter=true&width=700&lines=Senior+PHP+Developer;Laravel+Developer;Node.js+Backend+Developer;REST+API+Specialist;React+%7C+Vue.js+Developer;Always+Learning+Something+New" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=24&pause=1000&color=00C4FF&center=true&vCenter=true&width=700&lines=Senior+PHP+Developer;Laravel+%7C+Node.js+%7C+Django+Developer;REST+%26+JWT+API+Specialist;React+%7C+Vue.js+%7C+Inertia.js+Developer;Always+Learning+Something+New" />
 
 <p>
   <a href="https://github.com/meetshahab2">
@@ -20,12 +20,12 @@
 
 💻 Senior Full Stack Developer with **10+ years of experience**
 
-🚀 I build scalable enterprise applications using **Laravel**, **Node.js**, **React**, and **Vue.js**.
+🚀 I build scalable enterprise applications using **Laravel**, **Node.js**, **Python/Django**, **React**, **Vue.js**, and **Inertia.js**.
 
 ❤️ Passionate about
 
 - Backend Architecture
-- REST APIs
+- REST & JWT-based APIs
 - Clean Code
 - System Design
 - Performance Optimization
@@ -33,10 +33,10 @@
 
 Currently learning
 
-- Python
-- Django
+- Advanced Django & DRF (Django REST Framework)
 - AI Integration
 - Advanced System Design
+- Microservices with Python
 
 ---
 
@@ -48,13 +48,23 @@ Currently learning
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel)
 ![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js)
 ![Express](https://img.shields.io/badge/Express-black?style=for-the-badge&logo=express)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 
 ### Frontend
 
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react)
 ![Vue](https://img.shields.io/badge/Vue.js-42b883?style=for-the-badge&logo=vuedotjs)
+![InertiaJS](https://img.shields.io/badge/Inertia.js-9553E9?style=for-the-badge&logo=inertia&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript)
 ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery)
+
+### Authentication & APIs
+
+![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=jsonwebtokens)
+![Sanctum](https://img.shields.io/badge/Laravel%20Sanctum-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![OAuth2](https://img.shields.io/badge/OAuth2-4285F4?style=for-the-badge&logo=auth0&logoColor=white)
+![REST API](https://img.shields.io/badge/REST%20API-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 
 ### Database
 
@@ -70,6 +80,20 @@ Currently learning
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman)
+
+---
+
+# 🔐 Authentication & API Expertise
+
+I design and implement secure, production-grade authentication systems for web and mobile clients:
+
+- **Laravel Sanctum** — Token-based authentication for SPAs, mobile apps, and simple APIs, with per-device token management and ability-based scopes
+- **JWT (JSON Web Tokens)** — Stateless authentication using signed access tokens for distributed and microservice architectures
+- **Refresh Token Flow** — Short-lived access tokens paired with long-lived refresh tokens for secure session renewal without repeated logins
+- **Token Revocation & Blacklisting** — Handling logout, forced expiry, and rotating refresh tokens to prevent replay attacks
+- **Role-Based Access Control (RBAC)** — Fine-grained permission systems using Spatie Permission and custom middleware
+- **OAuth2** — Third-party login integrations (Google, Facebook, etc.)
+- **API Rate Limiting & Throttling** — Protecting endpoints from abuse
 
 ---
 
@@ -98,7 +122,7 @@ Currently learning
 
 ## 🏥 Hospital Management System
 
-Laravel • Vue • Inertia • PostgreSQL
+Laravel • Vue • Inertia.js • PostgreSQL
 
 Modules
 
@@ -139,7 +163,7 @@ Laravel Backend APIs
 
 ## 💼 Human Resource Management System
 
-Laravel + React
+Laravel + React + Inertia.js
 
 - Payroll
 - Leave
@@ -170,6 +194,18 @@ Laravel Enterprise Application
 - Artisan Commands
 - Automation
 - Reports
+
+---
+
+## 🐍 Data & Automation Platform
+
+Python • Django • Django REST Framework
+
+- Custom Admin Dashboards
+- REST APIs with DRF
+- JWT-based Authentication
+- Background Task Automation
+- Data Pipelines & Reporting
 
 ---
 
