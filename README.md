@@ -99,6 +99,31 @@ I design and implement secure, production-grade authentication systems for web a
 
 # 🚀 Featured Projects
 
+## 🔗 [Laravel Inertia Vue JS SPA](https://github.com/meetshahab2/laravel-inertia-vue-js)
+
+Laravel 12 • Inertia.js • Vue 3 • Tailwind CSS
+
+A Single Page Application for **inventory management**, built without a separate API layer — server-side routing with a modern SPA experience.
+
+- Full CRUD operations on inventory items
+- Built-in Laravel authentication
+- Responsive UI with Tailwind CSS
+
+---
+
+## 🔗 [Node.js JWT Auth API](https://github.com/meetshahab2/nodejs-project)
+
+Node.js • Express • JWT • MySQL/MongoDB
+
+A backend REST API demonstrating **production-style authentication**.
+
+- JWT-based login/registration with refresh token flow
+- Category CRUD APIs
+- Security hardening: rate limiting, Helmet, CORS
+- Supports both MySQL and MongoDB
+
+---
+
 ## 🏥 Healthcare CRM
 
 - Laravel
