@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hi 👋 I'm Shahabuddin
+# Hi 👋 I'm Shahab
 
 ### 🚀 Senior Full Stack Developer | Laravel • Node.js • React • Vue.js
 
