@@ -6,11 +6,7 @@
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=24&pause=1000&color=00C4FF&center=true&vCenter=true&width=700&lines=Senior+PHP+Developer;Laravel+%7C+Node.js+%7C+Django+Developer;REST+%26+JWT+API+Specialist;React+%7C+Vue.js+%7C+Inertia.js+Developer;Always+Learning+Something+New" />
 
-<p>
-  <a href="https://github.com/meetshahab2">
-    <img src="https://komarev.com/ghpvc/?username=meetshahab2&label=Profile%20Views&color=0e75b6&style=for-the-badge"/>
-  </a>
-</p>
+
 
 </div>
 
