@@ -1,0 +1,13 @@
+{% extends 'admin/base.html' %}
+{% load i18n %}
+
+{% block footer %}
+    {% if not is_popup %}
+        <footer class="app-footer {{ jazzmin_ui.footer_classes }}">
+            <div class="float-end d-none d-sm-inline">
+                Made with ❤️ by MyCompany
+            </div>
+            <strong>Copyright &copy; {% now 'Y' %} MyCompany Pvt Ltd.</strong> All rights reserved.
+        </footer>
+    {% endif %}
+{% endblock %}

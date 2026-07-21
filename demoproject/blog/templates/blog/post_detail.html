@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ post.title }} - My Blog</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fafafa;
+            color: #222;
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+
+        header {
+            border-bottom: 3px solid #222;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header a {
+            color: #222;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 2.5rem 1rem;
+        }
+
+        article h1 {
+            font-size: 2rem;
+            margin: 0 0 1rem 0;
+        }
+
+        .category {
+            display: inline-block;
+            background: #eee;
+            color: #555;
+            font-size: 0.85rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            margin-bottom: 1.5rem;
+        }
+
+        article p {
+            font-size: 1.05rem;
+            color: #333;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="/">My Blog</a>
+    </header>
+
+    <main>
+        <article>
+            <span class="category">{{ post.category.name }}</span>
+            <h1>{{ post.title }}</h1>
+            <p>{{ post.description }}</p>
+        </article>
+
+        <a href="/" class="back-link">← Back to all posts</a>
+    </main>
+
+</body>
+
+</html>
