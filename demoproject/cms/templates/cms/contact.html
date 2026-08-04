@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}
+Contact Us
+{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <div class="page-content-inner">
+
+            <span class="eyebrow">Get in touch</span>
+            <h1>Contact Us</h1>
+
+            <p>
+                Have a question or need help? Fill out the form below and we'll get back to you as soon as possible.
+            </p>
+
+            <form method="post" class="contact-form">
+                {% csrf_token %}
+
+                <div class="form-group">
+                    <label class="form-label">Name</label>
+                    {{ form.name }}
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    {{ form.email }}
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Phone</label>
+                    {{ form.phone }}
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Subject</label>
+                    {{ form.subject }}
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Message</label>
+                    {{ form.message }}
+                </div>
+
+                <div class="btn-row">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <a href="/" class="btn btn-ghost">Cancel</a>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,200 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{ site.site_name|default:"My Company" }} — Home{% endblock %}
+
+{% block content %}
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="container hero-grid">
+
+        <div>
+
+            <span class="eyebrow">now shipping v2.4</span>
+
+            <h1>Ship <span>faster</span> with software built to scale.</h1>
+
+            <p class="lead">
+                Professional web development, CMS &amp; software solutions —
+                from first commit to production API, we build the backend
+                of your growth.
+            </p>
+
+            <div class="btn-row">
+
+                <a href="/services/" class="btn btn-primary">Our Services →</a>
+
+                <a href="/about-us/" class="btn btn-ghost">Learn more</a>
+
+            </div>
+
+        </div>
+
+        <div class="console reveal">
+
+            <div class="console-bar">
+                <span class="console-dot"></span>
+                <span class="console-dot"></span>
+                <span class="console-dot"></span>
+                <span class="console-title">api / request</span>
+            </div>
+
+            <div class="console-body">
+
+                <div class="console-line console-req">POST /v1/projects</div>
+                <div class="console-line">{</div>
+                <div class="console-line">&nbsp;&nbsp;<span class="console-key">"stack"</span>: <span class="console-str">"django + rest"</span>,</div>
+                <div class="console-line">&nbsp;&nbsp;<span class="console-key">"status"</span>: <span class="console-str">"deployed"</span>,</div>
+                <div class="console-line">&nbsp;&nbsp;<span class="console-key">"uptime"</span>: <span class="console-str">"99.98%"</span></div>
+                <div class="console-line">}<span class="cursor"></span></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section">
+
+    <div class="container about-grid">
+
+        <div class="reveal">
+
+            <span class="eyebrow">about us</span>
+
+            <h2>Engineers first, vendors second.</h2>
+
+            <p>{{ about_page.content|striptags|truncatewords:60 }}</p>
+
+            <a href="/about-us/" class="btn btn-primary">Read More →</a>
+
+        </div>
+
+        <div class="reveal">
+
+            {% if about_page.cover_image %}
+                <img src="{{ about_page.cover_image.url }}" alt="About {{ site.site_name }}">
+            {% else %}
+                <img src="{% static 'images/about.jpg' %}" alt="About {{ site.site_name }}">
+            {% endif %}
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section class="section" style="background:var(--surface-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+
+    <div class="container">
+
+        <div class="section-head reveal">
+
+            <span class="eyebrow">what we do</span>
+
+            <h2>Three ways we plug into your stack</h2>
+
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card reveal">
+                <span class="service-tag mono">$ web-dev --deploy</span>
+                <h4>Web Development</h4>
+                <p>Responsive websites using Django, Laravel and modern technologies.</p>
+            </div>
+
+            <div class="service-card reveal">
+                <span class="service-tag mono">$ cms --init</span>
+                <h4>CMS Development</h4>
+                <p>Powerful Content Management System for your business.</p>
+            </div>
+
+            <div class="service-card reveal">
+                <span class="service-tag mono">$ api --connect</span>
+                <h4>API Integration</h4>
+                <p>REST API, Payment Gateway and Third Party Integrations.</p>
+            </div>
+
+        </div>
+
+        <div class="center mt-cta">
+
+            <a href="/services/" class="btn btn-primary">Read More →</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= BLOG PREVIEW (pulled from the blog app) ================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-head reveal">
+
+            <span class="eyebrow">from the blog</span>
+
+            <h2>Latest Blog</h2>
+
+        </div>
+
+        <div class="blog-grid">
+
+            {% for post in latest_posts %}
+
+            <div class="blog-card reveal">
+
+                {% if post.cover_image %}
+
+                <img src="{{ post.cover_image.url }}" alt="{{ post.title }}">
+
+                {% endif %}
+
+                <div class="blog-body">
+
+                    {% if post.category %}
+                        <span class="category">{{ post.category.name }}</span>
+                    {% endif %}
+
+                    <h5>{{ post.title }}</h5>
+
+                    <p>{{ post.description|striptags|truncatewords:20 }}</p>
+
+                     <a href="{% url 'blog:post_detail' slug=post.slug %}" class="btn btn-primary">Read More</a>
+
+                </div>
+
+            </div>
+
+            {% empty %}
+
+            <p class="no-posts">// no blog posts found</p>
+
+            {% endfor %}
+
+        </div>
+
+        <div class="center mt-cta">
+
+            <a href="/blog/" class="btn btn-primary">View All Blogs →</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

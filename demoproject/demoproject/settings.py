@@ -30,6 +30,17 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+STATIC_URL = 'static/'
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
+
 INSTALLED_APPS = [
     'jazzmin',
     'django.contrib.admin',
@@ -39,6 +50,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    "cms",
+    "django_ckeditor_5",
 ]
 
 JAZZMIN_SETTINGS = {
@@ -51,10 +64,13 @@ JAZZMIN_SETTINGS = {
     "welcome_sign": "Welcome to the Admin Panel",
     "copyright": "My Company Ltd",         # fixes the blank "."
     "search_model": ["auth.User"],
+    "related_modal_active": False,
     "user_avatar": None,
     "site_logo": None,    
     "login_logo": None,
     "site_icon": None,
+    "custom_css": "css/admin_custom.css",
+    "custom_js": "js/admin_custom.js",
 
     # Top menu
     "topmenu_links": [
@@ -72,22 +88,24 @@ JAZZMIN_SETTINGS = {
     "default_icon_parents": "fas fa-chevron-circle-right",
     "default_icon_children": "fas fa-circle",
 
-    "show_ui_builder": True,   # lets you preview themes live at /admin, then remove once you pick one
+    "show_ui_builder": False,   # lets you preview themes live at /admin, then remove once you pick one
+    "default_theme_mode": "auto",   # ya "light" ya "dark"
 }
 
 JAZZMIN_UI_TWEAKS = {
+  
     "navbar_small_text": False,
     "footer_small_text": False,
     "body_small_text": False,
     "brand_small_text": False,
     "brand_colour": "navbar-indigo",
     "accent": "accent-primary",
-    "navbar": "navbar-dark",
+    "navbar": "navbar-light",
     "no_navbar_border": False,
     "navbar_fixed": True,
     "layout_boxed": False,
     "footer_fixed": False,
-    "sidebar_fixed": True,
+    "sidebar_fixed": False,
     "sidebar": "sidebar-dark-primary",
     "sidebar_nav_small_text": False,
     "sidebar_disable_expand": False,
@@ -129,6 +147,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'cms.context_processors.global_data',
             ],
         },
     },
@@ -170,6 +189,28 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+CKEDITOR_5_CONFIGS = {
+    "default": {
+        "toolbar": [
+            "heading", "|",
+            "bold", "italic", "link",
+            "bulletedList", "numberedList", "|",
+            "insertImage", "insertTable", "|",
+            "undo", "redo", "|",
+            "sourceEditing"
+        ],
+    },
+    "extends": {
+        "toolbar": [
+            "heading", "|",
+            "bold", "italic", "underline", "strikethrough", "|",
+            "link", "bulletedList", "numberedList", "|",
+            "insertImage", "insertTable", "blockQuote", "|",
+            "undo", "redo", "|",
+            "sourceEditing"
+        ],
+    },
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
@@ -186,7 +227,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = 'static/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/6.0/ref/settings/#default-auto-field

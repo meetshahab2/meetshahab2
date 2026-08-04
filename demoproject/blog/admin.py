@@ -12,31 +12,42 @@ class CategoryAdmin(admin.ModelAdmin):
 class PostAdmin(admin.ModelAdmin):
 
     fields = (
-        "title",
         "category",
+        "title",
         "slug",
+        "cover_image",
         "description",
+        "meta_title",
+        "meta_description",
+        "is_published",
     )
-    
+
     list_display = (
         "id",
         "title",
         "category",
-        "slug",
+        "cover_image",
+        "is_published",
         "created_at",
     )
 
     search_fields = (
         "title",
         "slug",
+        "meta_title",
     )
 
     list_filter = (
         "category",
+        "is_published",
         "created_at",
+    )
+
+    readonly_fields = (
+        "created_at",
+        "updated_at",
     )
 
     prepopulated_fields = {
         "slug": ("title",)
     }
-    
