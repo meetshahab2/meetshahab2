@@ -2,27 +2,35 @@
 
 {% block title %}Blog{% endblock %}
 
+{% block meta_description %}Read the latest articles and updates from our team.{% endblock %}
+
 {% block content %}
+
+<header class="page-header">
+    <div class="container">
+        <span class="eyebrow">BLOG</span>
+        <h1>Latest Blog Posts</h1>
+    </div>
+</header>
 
 <section class="section">
     <div class="container">
-
-        <div class="section-head">
-            <span class="eyebrow">BLOG</span>
-            <h1>Latest Blog Posts</h1>
-        </div>
 
         <div class="blog-grid">
 
             {% for post in posts %}
             <article class="blog-card">
 
+                {% if post.cover_image %}
+                <a href="{% url 'blog:post_detail' slug=post.slug %}">
+                    <img src="{{ post.cover_image.url }}" alt="{{ post.title }}">
+                </a>
+                {% endif %}
+
                 <div class="blog-body">
 
                     {% if post.category %}
-                        <span class="category">
-                            {{ post.category.name }}
-                        </span>
+                        <span class="eyebrow">{{ post.category.name }}</span>
                     {% endif %}
 
                     <h5>
@@ -44,7 +52,7 @@
             </article>
             {% empty %}
 
-            <p>No posts found.</p>
+            <p class="no-posts">No posts found.</p>
 
             {% endfor %}
 

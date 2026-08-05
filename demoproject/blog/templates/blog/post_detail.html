@@ -1,26 +1,42 @@
 {% extends "base.html" %}
 
-{% block title %}{{ post.title }}{% endblock %}
+{% block title %}{{ post.meta_title|default:post.title }}{% endblock %}
+
+{% block meta_description %}{{ post.meta_description|default:post.description|striptags|truncatewords:30 }}{% endblock %}
+
+{% block og_title %}{{ post.meta_title|default:post.title }}{% endblock %}
+{% block og_description %}{{ post.meta_description|default:post.description|striptags|truncatewords:30 }}{% endblock %}
+{% block og_image %}{% if post.cover_image %}<meta property="og:image" content="{{ post.cover_image.url }}">{% endif %}{% endblock %}
 
 {% block content %}
 
-<section class="section">
+<header class="page-header">
     <div class="container">
+        {% if post.category %}
+            <span class="eyebrow">{{ post.category.name }}</span>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+        <p class="post-meta">{{ post.created_at|date:"F j, Y" }}</p>
+    </div>
+</header>
 
-    {% if post.category %}
-        <span class="category">{{ post.category.name }}</span>
-    {% endif %}
+{% if post.cover_image %}
+<div class="post-cover">
+    <div class="container">
+        <img src="{{ post.cover_image.url }}" alt="{{ post.title }}">
+    </div>
+</div>
+{% endif %}
 
-    <h1>{{ post.title }}</h1>
+<section class="page-content">
+    <div class="container">
+        <div class="page-content-inner">
+            {{ post.description|safe }}
+        </div>
 
-    {{ post.description|safe }}
-
-
-
-<a href="{% url 'blog:index' %}" class="back-link">
-    ← Back to all posts
-</a>
-
+        <a href="{% url 'blog:index' %}" class="btn btn-ghost">
+            ← Back to all posts
+        </a>
     </div>
 </section>
 
