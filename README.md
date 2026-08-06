@@ -276,7 +276,7 @@ Python • Django • Django REST Framework
 
 <p align="left">
 
-<a href="https://mail.google.com/mail/?view=cm&fs=1&to=meetshahab2@gmail.com" target="_blank">
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=ghareluremedy1@gmail.com" target="_blank">
   <img src="https://img.shields.io/badge/Email%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
 
