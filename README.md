@@ -276,8 +276,8 @@ Python • Django • Django REST Framework
 
 <p align="left">
 
-<a href="mailto:meetshahab2@example.com">
-<img src="https://img.shields.io/badge/Send%20Me%20an%20Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+<a href="mailto:your-email@gmail.com?subject=GitHub%20Profile%20Inquiry">
+  <img src="https://img.shields.io/badge/Email%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
 
 <a href="https://github.com/meetshahab2">
