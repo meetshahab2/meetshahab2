@@ -11,6 +11,7 @@
 </div>
 
 ---
+
 # 🌐 Connect With Me
 
 <p align="left">
@@ -29,6 +30,7 @@
 
 </p>
 
+---
 
 # 💫 About Me
 
@@ -289,8 +291,6 @@ Python • Django • Django REST Framework
 </p>
 
 ---
-
-
 
 ---
 
