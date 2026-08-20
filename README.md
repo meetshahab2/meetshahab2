@@ -35,7 +35,7 @@
 
 # 💫 About Me
 
-💻 Senior Full Stack Developer with **10+ years of experience**
+💻 Senior Full Stack Engineer with **10+ years of experience**
 
 🚀 I build scalable enterprise applications using **Laravel**, **Node.js**, **Python/Django**, **React**, **Vue.js**, and **Inertia.js**.
 
