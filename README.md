@@ -4,7 +4,7 @@
 
 ### 🚀 Senior Full Stack Engineer | Laravel • Node.js • Python/Django • React • Vue.js • Inertia.js
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=24&pause=1000&color=00C4FF&center=true&vCenter=true&width=700&lines=Senior+Full+Stack+Engineer;Laravel+%7C+Node.js+%7C+Django+Engineer;REST+%26+JWT+API+Specialist;React+%7C+Vue.js+%7C+Inertia.js+Developer;Always+Learning+Something+New" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=24&pause=1000&color=00C4FF&center=true&vCenter=true&width=700&lines=Senior+Full+Stack+Engineer;Laravel+%7C+Node.js+%7C+Django+Engineer;REST+%26+JWT+API+Specialist;React+%7C+Vue.js+%7C+Inertia.js+Engineer;Always+Learning+Something+New" alt="Typing SVG" />
 
 
 
